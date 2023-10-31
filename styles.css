@@ -1,0 +1,79 @@
+/* CSS for Navigation Bar */
+.navbar {
+    background-color: #333; /* Background color for the navigation bar */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white; /* Text color for navigation links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #86A8CF;
+}
+
+h1 {
+    color: #522B5B;
+}
+h2 {
+    color: #384358;
+}
+
+#route-planner {
+    margin: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 150px;
+    margin: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+ .class1{
+    flex:1;
+ }
+
+ .class2{
+    flex:1;
+ }

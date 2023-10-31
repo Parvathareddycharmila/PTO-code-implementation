@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <title>Public Transport Optimization</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            
+        </ul>
+    </nav>
+    <h1>Public Transport Optimization</h1>
+    <div id="route-planner">
+        <label for="source">Source:</label>
+        <select id="source">
+            <option value="chennai">chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Tiruchirappalli">Tiruchirappalli</option>
+            <option value="Salem">Salem</option>
+            <option value="Erode">Erode</option>
+            <option value="Vellore">Vellore</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Thoothukudi (Tuticorin)">Thoothukudi (Tuticorin)</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Dindigul">Dindigul</option>
+            <option value="Nagercoil">Nagercoil</option>
+            <option value="Cuddalore">Cuddalore</option>
+            <option value="Kanchipuram">Kanchipuram</option>
+            <option value="Karur">Karur</option>
+            <option value="Namakkal">Namakkal</option>
+            <option value="Tiruvannamalai">Tiruvannamalai</option>
+            <option value="Pollachi">Pollachi</option>
+            <option value="Ooty (Udhagamandalam)">Ooty (Udhagamandalam)</option>
+            <option value="Villupuram">Villupuram</option>
+            
+            
+            
+
+        </select>
+        <label for="destination">Destination:</label>
+        <select id="destination">
+            <option value="Sullurpet">Sullurpet</option>
+            <option value="Vijayawada">Vijayawada</option>
+            <option value="Guntur">Guntur</option>
+            <option value="Nellore">Nellore</option>
+            <option value="Kurnool">Kurnool</option>
+            <option value="Rajahmundry">Rajahmundry</option>
+            <option value="Tirupati">Tirupati</option>
+            <option value="Anantapur">Anantapur</option>
+            <option value="Vizianagaram">Vizianagaram</option>
+            <option value="Eluru">Eluru</option>
+            <option value="Kadapa (Cuddapah)">Kadapa (Cuddapah)</option>
+            <option value="Ongole">Ongole</option>
+            <option value="Machilipatnam">Machilipatnam</option>
+            <option value="Srikakulam">Srikakulam</option>
+            <option value="Nandyal">Nandyal</option>
+            <option value="Proddatur">Proddatur</option>
+            <option value="Tenali">Tenali</option>
+            <option value="Chittoor">Chittoor</option>
+            <option value="Bhimavaram">Bhimavaram</option>
+            <option value="Tadipatri">Tadipatri</option>
+        </select>
+        <button id="plan-route">Plan Route</button>
+    </div>
+    <div id="result">
+        <h2>Optimized Route:</h2>
+        <ul id="route-list"></ul>
+    </div>
+    <p style="font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; color: #333;">Bus routes that adequately serve citizens are crucial for proper urban mobility. The CUIP is currently studying CARTA bus routes so that we can 1) increase ridership and 2) increase accessibility. See the current bus routes in the image below.</p>
+    <image src="4936036.jpg" width="600" height="600" style="border-radius: 10px;"></image>
+    <p id="about">Accessibility and need are key factors for determining high-priority areas. Accessibility to buses is determined by proximity to route. Low-income households are most likely to not own a vehicle, therefore needing access to public transportation the most. Below, you will see accessibility and need plotted with the CARTA routes.<br>
+
+        Darker colors represent a higher level of household income, and the blue represents areas with bus stops within 15 minutes of walking.<br> 
+        
+        Overlaying household income, total population, unemployment and walkability reveals neighborhoods under-served by the current CARTA bus routes. See charts below.<br></p>
+    <div class="main">
+        <div class="class1">
+            <img src="3650467.jpg" width="300" height="300" style="border-radius: 10px;">
+        </div>
+        <div class="class2">
+            <img src="25475.jpg" width="300" height="300" style="border-radius: 10px;">
+        </div>
+    </div>
+    <div class="main">
+        <div class="class1">
+            <img src="8900.jpg" width="300" height="300" style="border-radius: 10px;">
+        </div>
+        <div class="class2">
+            <img src="Sandy_Tsp-01_Single-12.jpg" width="300" height="300" style="border-radius: 10px;">
+        </div>
+    </div>
+    <p>There are specific areas with less income, no access to CARTA, a high rate of unemployment and fewer households that own/lease vehicles.
+
+    </p>
+    <p style="font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; color: #333;">Future Work</p>
+    <p>Analyze OD matrix<br>
+
+        Run simulations to determine best possible new routes<br>
+        
+        Learning ride rates and passenger totals<br>
+        
+        Simulate several scenarios to improve access to those live in the identified areas<br></p>
+
+        <image src="2531005.jpg" width="600" height="600" style="border-radius: 10px;"></image>
+
+        <script src="script.js"></script>
+</body>
+</html>
